@@ -25,17 +25,17 @@ programa {
  
   funcao adicionar_produto() {
 
-}
+  }
 
   funcao ver_carrinho () {
 
-}   
+  }   
   
   funcao alterar_quantidade () {
 
   }
 
-  
+
   funcao remover_item () {
 
   }
