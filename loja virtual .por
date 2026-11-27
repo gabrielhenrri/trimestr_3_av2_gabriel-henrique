@@ -69,53 +69,7 @@ programa {
 				// C - CREATE (Adicionar Itens ao Carrinho)
 				// ====================================================
 				caso 1:
-					limpa()
-					escreva("--- CATÁLOGO DE PRODUTOS ---\n")
-					escreva("1. Camisa Esportiva (Estoque: ", estoque_prod1, ") - R$ ", preco_prod1, "\n")
-					escreva("2. Boné Casual      (Estoque: ", estoque_prod2, ") - R$ ", preco_prod2, "\n")
-					escreva("3. Tênis de Corrida (Estoque: ", estoque_prod3, ") - R$ ", preco_prod3, "\n")
-					escreva("Escolha o produto que deseja adicionar: ")
-					leia(opcao_crud)
-
-					escreva("Digite a quantidade desejada: ")
-					leia(quantidade_temp)
-
-					se (opcao_crud == 1)
-					{
-						se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1) {
-							qtd_carrinho_prod1 = qtd_carrinho_prod1 + quantidade_temp
-							estoque_prod1 = estoque_prod1 - quantidade_temp
-							escreva("\nItem adicionado ao carrinho com sucesso!\n")
-						} senao {
-							escreva("\nQuantidade inválida ou estoque insuficiente!\n")
-						}
-					}
-					senao se (opcao_crud == 2)
-					{
-						se (quantidade_temp > 0 e quantidade_temp <= estoque_prod2) {
-							qtd_carrinho_prod2 = qtd_carrinho_prod2 + quantidade_temp
-							estoque_prod2 = estoque_prod2 - quantidade_temp
-							escreva("\nItem adicionado ao carrinho com sucesso!\n")
-						} senao {
-							escreva("\nQuantidade inválida ou estoque insuficiente!\n")
-						}
-					}
-					senao se (opcao_crud == 3)
-					{
-						se (quantidade_temp > 0 e quantidade_temp <= estoque_prod3) {
-							qtd_carrinho_prod3 = qtd_carrinho_prod3 + quantidade_temp
-							estoque_prod3 = estoque_prod3 - quantidade_temp
-							escreva("\nItem adicionado ao carrinho com sucesso!\n")
-						} senao {
-							escreva("\nQuantidade inválida ou estoque insuficiente!\n")
-						}
-					}
-					senao {
-						escreva("\nProduto inválido!\n")
-					}
-					
-					escreva("\nPressione ENTER para voltar ao menu...")
-					leia(tecla_pausa)
+				 adicionar_produto()
 					pare
 
 				// ====================================================
