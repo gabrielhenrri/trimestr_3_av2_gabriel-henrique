@@ -34,9 +34,13 @@ programa {
   funcao alterar_quantidade () {
 
   }
+
+  
   funcao remover_item () {
-    
+
   }
+
+
   funcao inicio() {
 
 	
