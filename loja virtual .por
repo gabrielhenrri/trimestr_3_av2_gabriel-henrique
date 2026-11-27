@@ -30,6 +30,10 @@ programa {
   funcao ver_carrinho () {
 
 }   
+  
+  funcao alterar_quantidade () {
+    
+  }
   funcao inicio() {
 
 	
