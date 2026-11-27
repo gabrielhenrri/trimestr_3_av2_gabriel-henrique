@@ -26,6 +26,10 @@ programa {
   funcao adicionar_produto() {
 
 }
+
+  funcao ver_carrinho () {
+
+}   
   funcao inicio() {
 
 	
@@ -308,5 +312,5 @@ programa {
 		}
 	}
 }
-  }
-}
+  
+
